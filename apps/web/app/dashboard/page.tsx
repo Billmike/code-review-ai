@@ -1,8 +1,8 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 'use client';
 
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
-import axios from 'axios';
 import Navigation from '../../components/common/Navigation';
 import RepositoryList from '../../components/dashboard/RepositoryList';
 import RecentPRs from '../../components/dashboard/RecentPRs';

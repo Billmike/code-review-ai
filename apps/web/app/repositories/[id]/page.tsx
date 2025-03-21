@@ -1,4 +1,4 @@
-// apps/web/app/repositories/[id]/page.tsx
+/* eslint-disable @typescript-eslint/no-explicit-any */
 'use client';
 
 import { useEffect, useState } from 'react';
@@ -46,7 +46,7 @@ interface RepoStats {
   }[];
 }
 
-export default function RepositoryDetail({ params }: { params: { id: string } }) {
+export default function RepositoryDetail({ params }: any) {
   const { user, loading, isAuthenticated } = useAuth();
   const router = useRouter();
   const [repository, setRepository] = useState<Repository | null>(null);
